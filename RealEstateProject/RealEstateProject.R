@@ -1,8 +1,5 @@
 # Building Real Estate project using simple linear regression model
-#can refer another code from here https://rpubs.com/more11neha/RealEstateProject
 #rmse came as 0.51
-
-#here we have not find cutoff as it was not asked to submit hard classes(cutoff)
 
 library(tidymodels)
 library(visdat)
