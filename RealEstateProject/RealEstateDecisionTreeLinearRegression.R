@@ -1,15 +1,7 @@
 #DTrees and random forest of linear regression
 # Building Real Estate project using DTrees and Random forest model for linear regression 
 #Random forest gave good result than dTees and simple linear model
-
-#This file csv is generated and submitted for project
-
-#csv created using random forest predictions 
-#can refer another code from here https://rpubs.com/more11neha/RealEstateProject
-
 #rmse for random forest came 0.67
-
-#here we have not find cutoff as it was not asked to submit hard classes(cutoff)
 
 library(tidymodels)
 library(visdat)
@@ -113,6 +105,7 @@ train_pred=predict(final_tree_fit,new_data = train)
 test_pred=predict(final_tree_fit,new_data = test)
 
 
+#Second model
 #Random forest
 rf_model = rand_forest(
   mtry = tune(),
